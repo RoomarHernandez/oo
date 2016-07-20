@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>CodigosC-RoomarWeb</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+
+	<body id="top">
+		<!-- Header -->
+			<header id="header">
+				<h1><strong>«Codigos en "Lenguaje C"»</strong><br/>.</h1>
+				<strong>Tareas, proyectos, ejercicios, etc. que fui<br/>
+				implementado a lo largo de la licenciatura.</strong>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+						<h1>«Codigos en lenguaje C»</h1>
+
+				<!-- UNO -->
+					<section id="uno">
+						<center><h2>Tabla con mis codigos</h2></center>
+							<div class="table-wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>Nombre</th>
+											<th>Descripción</th>
+											<th>Ver o Descargar</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><h5>holaMundo.c</h5></td>
+											<td><h5>Implementación del hola mundo.</h5></td>
+											<td><a href="holaMundo.c" class="fa fa-file-code-o" aria-hidden="true"></a></td>
+										</tr>
+										<tr>
+											<td><h5>parHastaImpar.c</h5></td>
+											<td><h5>El programa pide al usuario que introduzca un número. El programa dividirá dicho número entre 2 e imprimirá el resultado mientras que este sea par, y terminará cuando el número sea impar.</h5></td>
+											<td><a href="parHastaImpar.c" class="fa fa-file-code-o" aria-hidden="true"></a></td>
+										</tr>
+										<tr>
+											<td>Item Three</td>
+											<td> Morbi faucibus arcu accumsan lorem.</td>
+											<td><a href="#" class="fa fa-code" aria-hidden="true"></a></td>
+										</tr>
+										<tr>
+											<td>Item Four</td>
+											<td>Vitae integer tempus condimentum.</td>
+											<td><a href="#" class="fa fa-code" aria-hidden="true"></a></td>
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td>
+												<li><a href="#" class="fa fa-database" aria-hidden="true"></a></li>
+												<li><a href="Miguel Ruiz - Los Cuatro Acuerdos.pdf" class="fa fa-file-pdf-o" aria-hidden="true"></a></li>
+												<li><a href="#" class="fa fa-folder-open" aria-hidden="true"></a></li>
+												<li><a href="#" class="fa fa-code" aria-hidden="true"></a></li>
+												<li><a href="html5.zip" class="fa fa-download" aria-hidden="true"></a></li>
+												<li><a href="#" class="fa fa-file-code-o" aria-hidden="true"></a></li>
+											</td>
+											<!--td><a href="#" class="fa fa-file-pdf-o" aria-hidden="true"></a></td>
+											<td><a href="#" class="fa fa-folder-open" aria-hidden="true"></a></td>
+											<td><a href="#" class="fa fa-code" aria-hidden="true"></a></td>
+											<td><a href="#" class="fa fa-download" aria-hidden="true"></a></td>
+											<td><a href="#" class="fa fa-file-zip-o" aria-hidden="true"></a></td-->
+										</tr>
+										<tr>
+											<td>Item Five</td>
+											<td>Ante turpis integer aliquet porttitor.</td>
+											<td><a href="#" class="fa fa-file-code-o" aria-hidden="true"></a></td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</section>
+
+				<!-- DOS -->
+					<section id="dos">
+						<header>
+							<h2>[HolaMundo.c]</h2>
+						</header>
+							<pre><code>
+#include stdio.h>
+
+int main() {
+	printf("Hola mundo");
+	return 0;
+}
+							</code></pre>
+							<hr />
+
+					<!-- CODIGO NUMERO 2-->
+						<header>
+							<h2>[ParHastaImpar.c]</h2>
+							<h5>El programa pide al usuario que introduzca un número. El programa dividirá dicho número entre 2 e imprimirá el resultado mientras que este sea par, y terminará cuando el número sea impar:</h5>
+						</header>
+						<pre><code>
+#include stdio.h>
+
+int main(void) {
+	int numero;
+	fputs("Introduzca un numero entero par: ", stdout);
+
+	scanf("%d", &numero);
+	if (!numero) {
+		fputs("Error: numero no valido.\n", stderr);
+		return -1;
+	}
+
+	int i = 1;
+	while (numero%2 == 0) {
+		printf ("%.3d| %d/2 =", i++, numero);
+		numero /=2;
+		printf("%d\n", numero);
+	}
+
+	printf ("No se puede seguir dividiendo: El numero %d es impar.\n", numero);
+	return 0;
+}
+							</code></pre>
+							<hr />
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="actions">
+					<a href="index.html" class="icon fa-home"> Inicio</a>
+				</ul>
+				<ul class="icons">
+					<li><a href="https://www.facebook.com/profile.php?id=100001568146507&ref=br_rs" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+					<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">RoomarWeb</a></li>
+				</ul>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
